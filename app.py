@@ -6,7 +6,7 @@ app = Flask(__name__)
 local = '/'
 prod = '/hello_flask.html'
 
-@app.route(local)
+@app.route(prod)
 def index():
     return render_template('index.html')
 
