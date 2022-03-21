@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/css/main.css">
+    <title>Recipe Book!</title>
+</head>
+<body>
+    <h1>You Successfully Added the Follwing Recipe:</h1>
+    <nav>
+        <a href="/index.html">Add More Recipies!</a>
+        <a href="/show_recipes.html">View All Recipies!</a>
+    </nav>
+    <table>
+        <thead>
+            <th>Recipe Name</th>
+            <th>Ingredients</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>{{ recipe.name }}</td>
+                    <td>{{ recipe.ingredients }}</td>
+                    <td>{{ recipe.description }}</td>
+                </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

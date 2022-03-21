@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="static/css/main.css">
-    <title>Hello world!</title>
+    <title>Recipe Book!</title>
 </head>
+<header>
+    
+</header>
 <body>
-    <h1>Hello world!</h1>
-    <h4>This is my test site for T2 - standing up my development environment.</h4>
+    <h1>Welcome to you Recipe Book!</h1>
+    <h4>Please enter a recipe you would like to save below. Or choose to view the recipes you have saved.</h4>
+    <nav>
+        <a href="/show_recipes.html">View all Recipes</a>
+    </nav>
 
-    <h1>Testing mysql</h1>
-    <form action="/info" method="POST">
-        <p>Enter your name: <input type="text" name="name"/></p>
-        <p>Enter your age: <input type="integer" name="age"/></p>
-        <p><input type="submit" value="Submit"/></p>
+    <h1>Add Recipe</h1>
+    <form action="/index.html" method="POST">
+        <p>Recipe Name: <input type="text" name="name" required/></p>
+        Recipe Ingredients: <br>
+        <textarea rows="10" cols="50" name="ingredients" required></textarea><br><br>
+        Recipe Description:<br>
+        <textarea rows="10" cols="50" name="description" required></textarea>
+        <p><input type="submit" value="Add"/></p>
     </form>
 </body>
 </html>
