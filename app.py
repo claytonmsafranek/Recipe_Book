@@ -24,7 +24,7 @@ class Recipe(db.Model):
 db.create_all()
 
 #variables to alter between local and production environments
-local_home = '/index.html'
+local_home = '/'
 prod_home = '/hello_flask.html'
 
 @app.route(local_home, methods = ['POST', 'GET'])
